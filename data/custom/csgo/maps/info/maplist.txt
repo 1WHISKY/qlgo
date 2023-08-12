@@ -1,0 +1,4 @@
+;map filename;nice name;gamemodes; maxplayers
+longestyard;Longest Yard;duel tdm ffa iffa;12
+elder;Elder;duel tdm ffa;6
+campgrounds;Campgrounds;tdm ffa ca;32

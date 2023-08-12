@@ -1,0 +1,82 @@
+whitelist
+{
+	//
+	// 2 modifiers are allowed on file specifications:
+	//
+	//	allow_from_disk		- do not check the file signature
+	//	check_crc			- server does file signature checks on the client's file to make sure it matches
+	//
+	//	The default modifier on all files is allow_from_disk.
+
+
+	//
+	// Three types of file specifications:
+	//
+	//	1. directory\*.*			- refers to all files under the directory
+	//	2. directory\...			- refers to all files under the directory and all directories under that (recursively)
+	//	3. directory\filename		- refers to a single file
+	
+
+	//	
+	// By default, when in pure server mode, most content file types should be checked
+	//
+	shaders\...	check_crc
+	materials\...	check_crc
+	models\...		check_crc
+	sound\...		check_crc
+	scripts\...		check_crc
+	particles\...		check_crc
+	
+	//
+	// Allow live schema updates.
+	//
+	scripts\items\items_game_live.txt       allow_from_disk
+	scripts\items\items_game.txt      		allow_from_disk
+	
+	
+	
+	materials\quake\overlays\crosshair.vtf         allow_from_disk
+	materials\quake\overlays\hud.vtf               allow_from_disk
+
+	models\weapons\v_q3_gauntlet.dx90.vtx          allow_from_disk
+	models\weapons\v_q3_gauntlet.mdl               allow_from_disk
+	models\weapons\v_q3_gauntlet.vvd               allow_from_disk
+	models\weapons\v_q3_grenadel.dx90.vtx          allow_from_disk
+	models\weapons\v_q3_grenadel.mdl               allow_from_disk
+	models\weapons\v_q3_grenadel.vvd               allow_from_disk
+	models\weapons\v_q3_hmg.dx90.vtx               allow_from_disk
+	models\weapons\v_q3_hmg.mdl                    allow_from_disk
+	models\weapons\v_q3_hmg.vvd                    allow_from_disk
+	models\weapons\v_q3_lightninggun.dx90.vtx      allow_from_disk
+	models\weapons\v_q3_lightninggun.mdl           allow_from_disk
+	models\weapons\v_q3_lightninggun.vvd           allow_from_disk
+	models\weapons\v_q3_machinegun.dx90.vtx        allow_from_disk
+	models\weapons\v_q3_machinegun.mdl             allow_from_disk
+	models\weapons\v_q3_machinegun.vvd             allow_from_disk
+	models\weapons\v_q3_plasmagun.dx90.vtx         allow_from_disk
+	models\weapons\v_q3_plasmagun.mdl              allow_from_disk
+	models\weapons\v_q3_plasmagun.vvd              allow_from_disk
+	models\weapons\v_q3_railgun.dx90.vtx           allow_from_disk
+	models\weapons\v_q3_railgun.mdl                allow_from_disk
+	models\weapons\v_q3_railgun.vvd                allow_from_disk
+	models\weapons\v_q3_rocketl.dx90.vtx           allow_from_disk
+	models\weapons\v_q3_rocketl.mdl                allow_from_disk
+	models\weapons\v_q3_rocketl.vvd                allow_from_disk
+	models\weapons\v_q3_shotgun.dx90.vtx           allow_from_disk
+	models\weapons\v_q3_shotgun.mdl                allow_from_disk
+	models\weapons\v_q3_shotgun.vvd                allow_from_disk
+									
+	sound\feedback\hit0.wav                        allow_from_disk
+	sound\feedback\hit1.wav                        allow_from_disk
+	sound\feedback\hit2.wav                        allow_from_disk
+	sound\feedback\hit3.wav                        allow_from_disk
+	sound\world\bell_01.wav.wav                    allow_from_disk
+												
+	sound\player\sarge\*.*                         allow_from_disk
+	sound\vo\*.*                                   allow_from_disk
+	sound\vo_evil\*.*                              allow_from_disk
+	sound\vo_female\*.*                            allow_from_disk
+	
+	
+}
+
